@@ -1,10 +1,10 @@
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
-
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
-public class SeleniumTests1 {
-
-    public static void main(String[] args) {
+public class Test1 {
+    @Test
+    public void test11(){
         WebDriver driver = new HtmlUnitDriver();
         driver.get("https://www.gmail.com");
         System.out.println("Page Title :" + driver.getTitle());
